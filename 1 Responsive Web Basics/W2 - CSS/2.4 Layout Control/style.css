@@ -1,0 +1,23 @@
+body {
+    background: black;
+    color:honeydew;
+}
+
+h1 {
+    font-family:monospace;
+    font-size: 20pt;
+ }
+
+a:hover {
+    color:black;
+    background: white;
+    text-decoration: none;
+}
+
+.indent {
+    margin-left:10px;
+}
+s
+.gap_blw {
+    margin-bottom:50px;
+}

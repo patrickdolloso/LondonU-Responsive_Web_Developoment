@@ -1,0 +1,12 @@
+.album_cover {
+    width:25%;
+    border: 20px solid grey;
+}
+
+.photo_list {
+    width: 25%;
+}
+
+.single_photo {
+    width: 75%;
+}

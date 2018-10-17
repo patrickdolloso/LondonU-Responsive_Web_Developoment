@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Install Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Albums</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    -->
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        
+
+        <div class="container-fluid">
+        <!-- start of collapsed navbar -->
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Open</button>
+        </div>
+            <!-- end of collapsed nav bar -->    
+
+
+
+
+        <div class="collapse navbar-collapse" id="main_navbar">
+            <!-- Start uncollapsed navbar -->
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="albums.html">Albums</a></li>
+                <li><a href="photos.html">All Photos</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+        <h1>welcome to my bootstrap website</h1>
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="albums.html">Albums</a></li>
+        </ol>
+        <!-- End Breadcrumb -->
+
+        <a href="photos.html"><img class="album_cover" src="./images/img_1.jpg" alt="Cover Photo"></a>
+
+        <p>Graffiti Album</p>
+
+        <a href="photos.html"><img class="album_cover" src="./images/img_2.jpg" alt="Full English"></a>
+        <a href="photos.html"><img class="album_cover" src="./images/img_3.jpg" alt="Racks of Cheese"></a>   
+    </div>
+    
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
