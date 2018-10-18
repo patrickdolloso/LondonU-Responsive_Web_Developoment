@@ -139,8 +139,32 @@ Code format (JS):
 <br>
 **A:** Handlebars - jQuery is the library you use for interacting with the DOM
 
-##
+## Displaying Different Data with the same template
 ---
 **Source Code**
 [download](https://d3c33hcgiwev3.cloudfront.net/_465480ed492c1ecb38ad501366738e67_2.3.5.zip?Expires=1539993600&Signature=CAJODdWJF6w8X8ieOKCgMdV4atJWgXVEXeKBLl7d32pR998MT40W0KpaBcULAY-JR7YZ~tJEywUsSubI549uTPdzLlHq-CTqR8Z9a6rBLWXofjTwhx4VI5FyyK7QwOkgmu49Cn~ZNlMsel0gh24J8OBYdNd2Pdr-91gqac65C-s_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+<br>
+<br>
+<b>Practice Quiz</b>
+1. To layout two javaScript objects you need:
+<br> <b>A:</b> One Template - the power of templates, is that once you have a template you can re-use it with as many data objects as you like
 
+2. When you render two objects with a single template, which of these do you only have to do once?
+<br>
+<b>A:</b> Compile the Template - compilation only depends on the template and since you only have one template you only have to do it once
+## Displaying the Same Data with Different Templates, Use a Bootstrap Modal
+[Download Source Code](https://d396qusza40orc.cloudfront.net/phoenixassets/Jackie%27s%20folder/2.3.6_final.zip)
+
+<b>Practice Quiz</b>
+1. How many template expressions does a template need? <br>
+<b>A:</b> One for each piece of data you want to display - you only need expressions for the variables you want to show
+
+2. What is a modal?
+<br>
+<b>A:</b> A pop up dialog within HTML - modal refers to user interface elements that appear in front of the main interface and prevent you from interacting with it until you have dealt with the modal
+
+3. When do you call this?
+```Javascript
+$("#imageModal").modal('show'); 
+```
+<b>A:</b> After rendering the template - the modal does not exist until you render the template so you cannot show it
