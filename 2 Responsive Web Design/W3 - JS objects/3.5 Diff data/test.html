@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test of Handlebars</title>
+
+    <!-- Adding jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Adding Handlebars -->
+    <script src="./handlebars-v4.0.12.js"></script>
+
+    <!-- Adding Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Adding style.CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="content"></div>
+
+    <script id="image-template" type="text/x-handlebars-template">
+        <div class="title">
+            <h1>{{title}}</h1>
+            <h3 class="author">{{author}}</h3>
+            <img style="height:600" src="{{src}}">
+        </div>
+    </script>
+    
+    <script type="text/javascript">
+    
+    var source = $("#image-template").html();
+
+    var template = Handlebars.compile(source);
+
+    var data = {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/800px-The_Earth_seen_from_Apollo_17.jpg",
+        title: "The Earth Seen from A17",
+        author:"Ed g3s"
+    };
+
+    var html = template(data);
+
+    $('#content').html(html);
+
+    </script>
+    
+</body>
+</html>
